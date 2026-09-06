@@ -7,7 +7,9 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  base: "/the-editorial-suite/",
+  vite: {
+    base: "/the-editorial-suite/",
+  },
   tanstackStart: {
     server: { entry: "server" },
     prerender: {
