@@ -1,5 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
+import photoGarman from "@/assets/IMG_0874.jpeg.asset.json";
+import photoBand from "@/assets/IMG_1927.jpeg.asset.json";
+import photoSingapore from "@/assets/IMG_8519.jpeg.asset.json";
+import photoBridge from "@/assets/IMG_0790.jpeg.asset.json";
+
 export const Route = createFileRoute("/resume")({
   head: () => ({
     meta: [
@@ -301,6 +306,48 @@ function Resume() {
                 </li>
               ))}
             </ul>
+          </div>
+        </section>
+
+        <section className="grid gap-12 border-b border-border py-14 md:grid-cols-12">
+          <div className="md:col-span-3">
+            <p className="eyebrow md:sticky md:top-8">In the Field</p>
+          </div>
+          <div className="md:col-span-9 grid gap-px border border-border bg-border sm:grid-cols-2">
+            {[
+              {
+                src: photoGarman.url,
+                alt: "Meredith Clark in a hard hat on an unfinished road in a new housing development",
+                caption: "On site with Garman Homes — Morrisville, NC",
+              },
+              {
+                src: photoBand.url,
+                alt: "Meredith Clark holding a saxophone in front of the UNC bell tower",
+                caption: "Carolina marching band — Chapel Hill, NC",
+              },
+              {
+                src: photoSingapore.url,
+                alt: "Meredith Clark in front of the indoor waterfall at Jewel Changi Airport, Singapore",
+                caption: "Singapore — summer with Bata",
+              },
+              {
+                src: photoBridge.url,
+                alt: "Meredith Clark in a safety helmet crossing a wooden suspension bridge in a forest",
+                caption: "From the field — North Carolina",
+              },
+            ].map((photo) => (
+              <figure key={photo.caption} className="bg-background">
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  loading="lazy"
+                  className="w-full object-cover"
+                />
+                <figcaption className="px-4 py-3 text-xs tracking-wide text-muted-foreground">
+                  {photo.caption}
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </section>
 
