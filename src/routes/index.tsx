@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 import heroImage from "@/assets/hero-places.jpg";
 import writingImage from "@/assets/writing.jpg";
@@ -63,9 +63,12 @@ function Index() {
             </h1>
           </div>
           <nav className="flex gap-6 text-sm text-muted-foreground">
-            <a className="transition-colors hover:text-carolina" href="#work">
-              Work
-            </a>
+            <Link
+              to="/resume"
+              className="transition-colors hover:text-carolina"
+            >
+              Resume
+            </Link>
             <a className="transition-colors hover:text-carolina" href="#writing">
               Writing
             </a>
@@ -181,12 +184,22 @@ function Index() {
             estate, and sustainability. She is currently writing about land, capital,
             and permanence.
           </p>
-          <a
-            href="mailto:hello@example.com"
-            className="mt-8 inline-block border-b border-carolina pb-1 text-sm tracking-wide transition-colors hover:text-carolina"
-          >
-            hello@example.com
-          </a>
+          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-2">
+            <a
+              href="mailto:clarkmer@unc.edu"
+              className="border-b border-carolina pb-1 text-sm tracking-wide transition-colors hover:text-carolina"
+            >
+              clarkmer@unc.edu
+            </a>
+            <a
+              href="https://www.linkedin.com/in/clarkmer23/"
+              target="_blank"
+              rel="noreferrer"
+              className="border-b border-carolina pb-1 text-sm tracking-wide transition-colors hover:text-carolina"
+            >
+              LinkedIn ↗
+            </a>
+          </div>
         </section>
       </main>
 
