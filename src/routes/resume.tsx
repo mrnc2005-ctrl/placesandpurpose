@@ -23,55 +23,116 @@ export const Route = createFileRoute("/resume")({
 });
 
 const EMAIL = "clarkmer@unc.edu";
+const PHONE = "336-944-3343";
 const LINKEDIN = "https://www.linkedin.com/in/clarkmer23/";
 
 const experience = [
   {
-    role: "Writer & Analyst",
-    org: "Independent",
-    period: "2023 — Present",
+    role: "Rotational Intern",
+    org: "Garman Homes",
+    period: "June 2026 — July 2026",
+    location: "Morrisville, NC",
+    points: [
+      "Rotated across land acquisition, purchasing, sales, and construction management, gaining experience throughout the residential real estate development lifecycle.",
+      "Performed comparative market analyses (CMA) for land acquisition opportunities, analyzed lumber pricing, and supported preconstruction estimating for residential developments.",
+      "Collaborated with 7 construction managers across active residential projects to resolve field issues and monitor project progress.",
+      "Contributed to the development of Garman Homes' inaugural internship program by advising on onboarding, training, and rotational experiences for future cohorts.",
+    ],
+  },
+  {
+    role: "Academic Tutor",
+    org: "Academic Support Program for Student-Athletes, UNC",
+    period: "January 2026 — Present",
     location: "Chapel Hill, NC",
     points: [
-      "Reporting and essays on business, real estate, and sustainability — the deals, the codes, and the buildings that outlive both.",
-      "Market analysis and long-form features for editorial and research clients.",
+      "Tutored 15+ NCAA student-athletes in economics coursework in one-on-one and small group settings, improving comprehension of course material and study strategies.",
+      "Work closely with ASPSA staff through ongoing training and check-ins to support students in an NCAA-compliant academic environment.",
     ],
   },
   {
-    role: "Previous Role",
-    org: "Previous Organization",
-    period: "20XX — 20XX",
-    location: "City, State",
+    role: "Sustainability Intern",
+    org: "Bata",
+    period: "June 2025 — August 2025",
+    location: "Singapore",
     points: [
-      "Placeholder entry — send me the real role, employer, dates, and a few bullets and I'll drop them in.",
-      "Placeholder entry — replace with an accomplishment or two.",
+      "Supported global sustainability initiatives across 245 supplier facilities within Bata's Global Supply Chain organization.",
+      "Led development of a supplier Social and Environmental Remediation (SER) compliance dashboard, analyzing audit findings, remediation status, and supplier risk levels.",
+      "Assisted in developing long-term sustainability strategy by evaluating energy consumption, water usage, supplier performance, and emissions reduction opportunities.",
+      "Collaborated with international stakeholders to standardize supplier compliance reporting and improve sustainability data quality.",
     ],
   },
   {
-    role: "Previous Role",
-    org: "Previous Organization",
-    period: "20XX — 20XX",
-    location: "City, State",
+    role: "Sales Associate",
+    org: "Loft",
+    period: "June 2024 — July 2024",
+    location: "Greensboro, NC",
     points: [
-      "Placeholder entry — replace with your earliest listed role.",
+      "Drove revenue through excellent customer service, helping clients find and select products that met their needs.",
+      "Received 2 personal mentions in client surveys for a friendly demeanor and exceptional assistance.",
+    ],
+  },
+];
+
+const leadership = [
+  {
+    role: "President | Fundraising Chair",
+    org: "Kappa Kappa Psi Service Fraternity",
+    period: "February 2024 — Present",
+    location: "Chapel Hill, NC",
+    points: [
+      "Elected President of a 35-member service organization, overseeing chapter operations, national and university cooperation, officer leadership, and governance.",
+      "Planned and executed 10+ fundraising events, coordinating budgets, logistics, and volunteer teams in partnership with the chapter treasurer.",
+      "Supported community service initiatives including Adopt-a-Highway projects, emergency supply drives, and university outreach events.",
+    ],
+  },
+  {
+    role: "Member",
+    org: "UNC Habitat for Humanity Club",
+    period: "August 2024 — Present",
+    location: "Chapel Hill, NC",
+    points: [
+      "Participated in affordable housing construction projects including framing, site preparation, and general construction activities.",
+    ],
+  },
+  {
+    role: "Drum Major | Pep Band Conductor | Alto Saxophonist",
+    org: "University Marching Band",
+    period: "August 2023 — Present",
+    location: "Chapel Hill, NC",
+    points: [
+      "Led and conducted marching and pep band performances for NCAA Division I athletic events, including televised UNC football games before 50,000+ fans.",
+      "Coordinated with production staff and athletic departments while mentoring student musicians to deliver precise performances in high-pressure environments.",
     ],
   },
 ];
 
 const education = [
   {
-    school: "University of North Carolina",
-    degree: "Degree / Program",
-    period: "20XX — 20XX",
+    school: "University of North Carolina at Chapel Hill",
+    degree:
+      "B.S. Business Administration (Real Estate Concentration) · B.A. Economics · Minor in Music",
+    period: "Expected May 2027",
+    note: "GPA 3.59",
   },
 ];
 
-const skills = [
-  "Market analysis",
-  "Editorial writing",
-  "Real estate research",
-  "Sustainability reporting",
-  "Interviewing & fieldwork",
+const honors = [
+  { label: "Danielle Elizabeth Liotta Award", period: "May 2025" },
+  {
+    label: "Third Place — International Business Club Case Competition",
+    period: "February 2024",
+  },
+  {
+    label: "First Place — University Career Services / TTi Business Case Competition",
+    period: "November 2023",
+  },
 ];
+
+const credentials = [
+  { label: "North Carolina Broker License (in progress)", period: "Expected September 2026" },
+  { label: "Bloomberg Market Concepts", period: "May 2025" },
+];
+
 
 function Resume() {
   return (
@@ -108,9 +169,10 @@ function Resume() {
             Meredith Clark
           </h2>
           <p className="mt-4 max-w-prose text-base leading-relaxed text-muted-foreground">
-            Writer and analyst working across business, real estate, and
-            sustainability. Currently writing about land, capital, and
-            permanence.
+            Undergraduate at UNC Chapel Hill studying business administration
+            with a real estate concentration and economics — with work spanning
+            residential development, global supply chain sustainability, and
+            student leadership.
           </p>
           <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm">
             <a
@@ -118,6 +180,12 @@ function Resume() {
               className="border-b border-carolina pb-1 tracking-wide text-navy transition-colors hover:text-carolina"
             >
               {EMAIL}
+            </a>
+            <a
+              href={`tel:${PHONE.replace(/-/g, "")}`}
+              className="border-b border-carolina pb-1 tracking-wide text-navy transition-colors hover:text-carolina"
+            >
+              {PHONE}
             </a>
             <a
               href={LINKEDIN}
@@ -129,6 +197,7 @@ function Resume() {
             </a>
           </div>
         </section>
+
 
         <section className="grid gap-12 border-b border-border py-14 md:grid-cols-12">
           <div className="md:col-span-3">
@@ -174,6 +243,48 @@ function Resume() {
 
         <section className="grid gap-12 border-b border-border py-14 md:grid-cols-12">
           <div className="md:col-span-3">
+            <p className="eyebrow md:sticky md:top-8">Leadership & Community</p>
+          </div>
+          <div className="md:col-span-9">
+            <ul>
+              {leadership.map((job) => (
+                <li
+                  key={`${job.org}-${job.period}`}
+                  className="grid gap-4 border-b border-border py-8 first:pt-0 last:border-b-0 md:grid-cols-12"
+                >
+                  <div className="md:col-span-3">
+                    <p className="text-xs tracking-wide text-muted-foreground">
+                      {job.period}
+                      <br />
+                      {job.location}
+                    </p>
+                  </div>
+                  <div className="md:col-span-9">
+                    <h3 className="font-display text-2xl leading-snug">
+                      {job.role}
+                    </h3>
+                    <p className="mt-1 text-sm uppercase tracking-[0.14em] text-carolina">
+                      {job.org}
+                    </p>
+                    <ul className="mt-3 space-y-2">
+                      {job.points.map((point) => (
+                        <li
+                          key={point}
+                          className="text-sm leading-relaxed text-muted-foreground"
+                        >
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <section className="grid gap-12 border-b border-border py-14 md:grid-cols-12">
+          <div className="md:col-span-3">
             <p className="eyebrow">Education</p>
           </div>
           <div className="md:col-span-9">
@@ -182,7 +293,10 @@ function Resume() {
                 <li key={e.school} className="border-b border-border py-6 first:pt-0 last:border-b-0">
                   <h3 className="font-display text-2xl leading-snug">{e.school}</h3>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    {e.degree} · {e.period}
+                    {e.degree}
+                  </p>
+                  <p className="mt-1 text-xs tracking-wide text-muted-foreground">
+                    {e.period} · {e.note}
                   </p>
                 </li>
               ))}
@@ -192,20 +306,36 @@ function Resume() {
 
         <section className="grid gap-12 py-14 md:grid-cols-12">
           <div className="md:col-span-3">
-            <p className="eyebrow">Skills & Interests</p>
+            <p className="eyebrow">Honors & Credentials</p>
           </div>
-          <div className="md:col-span-9">
-            <ul className="flex flex-wrap gap-2">
-              {skills.map((s) => (
-                <li
-                  key={s}
-                  className="border border-border px-3 py-1.5 text-sm text-muted-foreground"
-                >
-                  {s}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-8 max-w-prose text-sm leading-relaxed text-muted-foreground">
+          <div className="md:col-span-9 grid gap-10 md:grid-cols-2">
+            <div>
+              <h3 className="font-display text-xl">Honors & Awards</h3>
+              <ul className="mt-3 space-y-3">
+                {honors.map((h) => (
+                  <li key={h.label} className="border-b border-border pb-3 text-sm text-muted-foreground">
+                    {h.label}
+                    <span className="mt-1 block text-xs tracking-wide text-carolina">
+                      {h.period}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-display text-xl">Certifications & Licenses</h3>
+              <ul className="mt-3 space-y-3">
+                {credentials.map((c) => (
+                  <li key={c.label} className="border-b border-border pb-3 text-sm text-muted-foreground">
+                    {c.label}
+                    <span className="mt-1 block text-xs tracking-wide text-carolina">
+                      {c.period}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <p className="md:col-span-2 max-w-prose text-sm leading-relaxed text-muted-foreground">
               Looking for the person behind the page?{" "}
               <Link
                 to="/"
@@ -225,6 +355,7 @@ function Resume() {
           <span>© {new Date().getFullYear()} Meredith Clark</span>
         </div>
       </footer>
+
     </div>
   );
 }
