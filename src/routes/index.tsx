@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImage from "@/assets/hero-places.jpg";
 import writingImage from "@/assets/writing.jpg";
 import sustainabilityImage from "@/assets/sustainability.jpg";
+import headshotAsset from "@/assets/0W4A9033.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -162,28 +163,40 @@ function Index() {
           </div>
         </section>
 
-        <section id="about" className="py-16 md:max-w-2xl">
-          <p className="eyebrow">About</p>
-          <p className="mt-5 font-display text-2xl leading-relaxed md:text-3xl">
-            Meredith Clark is a writer and analyst working across business, real
-            estate, and sustainability. She is currently writing about land, capital,
-            and permanence.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-2">
-            <a
-              href="mailto:clarkmer@unc.edu"
-              className="border-b border-carolina pb-1 text-sm tracking-wide transition-colors hover:text-carolina"
-            >
-              clarkmer@unc.edu
-            </a>
-            <a
-              href="https://www.linkedin.com/in/clarkmer23/"
-              target="_blank"
-              rel="noreferrer"
-              className="border-b border-carolina pb-1 text-sm tracking-wide transition-colors hover:text-carolina"
-            >
-              LinkedIn ↗
-            </a>
+        <section id="about" className="grid gap-10 py-16 md:grid-cols-12">
+          <figure className="md:col-span-5">
+            <img
+              src={headshotAsset.url}
+              alt="Meredith Clark in a black blazer, smiling with arms crossed"
+              width={1440}
+              height={1440}
+              loading="lazy"
+              className="w-full object-cover"
+            />
+          </figure>
+          <div className="flex flex-col justify-center md:col-span-7">
+            <p className="eyebrow">About</p>
+            <p className="mt-5 font-display text-2xl leading-relaxed md:text-3xl">
+              Meredith Clark is a writer and analyst working across business, real
+              estate, and sustainability. She is currently writing about land, capital,
+              and permanence.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-x-8 gap-y-2">
+              <a
+                href="mailto:clarkmer@unc.edu"
+                className="border-b border-carolina pb-1 text-sm tracking-wide transition-colors hover:text-carolina"
+              >
+                clarkmer@unc.edu
+              </a>
+              <a
+                href="https://www.linkedin.com/in/clarkmer23/"
+                target="_blank"
+                rel="noreferrer"
+                className="border-b border-carolina pb-1 text-sm tracking-wide transition-colors hover:text-carolina"
+              >
+                LinkedIn ↗
+              </a>
+            </div>
           </div>
         </section>
       </main>
