@@ -243,14 +243,6 @@ function Resume() {
 
         <section className="grid gap-12 border-b border-border py-14 md:grid-cols-12">
           <div className="md:col-span-3">
-            <p className="eyebrow">Education</p>
-          </div>
-          <div className="md:col-span-9">
-            <ul>
-              {education.map((e) => (
-                <li key={e.school} className="border-b border-border py-6 first:pt-0 last:border-b-0">
-        <section className="grid gap-12 border-b border-border py-14 md:grid-cols-12">
-          <div className="md:col-span-3">
             <p className="eyebrow md:sticky md:top-8">Leadership & Community</p>
           </div>
           <div className="md:col-span-9">
