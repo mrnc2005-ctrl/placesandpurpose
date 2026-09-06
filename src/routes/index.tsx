@@ -29,26 +29,19 @@ export const Route = createFileRoute("/")({
 const sections = [
   {
     label: "Business",
-    title: "The quiet economics of a slower market",
-    dek: "What developers, lenders, and small operators are actually doing while everyone waits for rates to move.",
+    description:
+      "Markets, capital, and the decisions behind the deal — how companies and developers make money move.",
   },
   {
     label: "Real Estate",
-    title: "Zoning is a story about who belongs",
-    dek: "A close read of three municipal codes and the neighborhoods they produced over forty years.",
+    description:
+      "Land, housing, and the built environment — from acquisition and entitlement to the finished street.",
   },
   {
     label: "Sustainability",
-    title: "Retrofit before rebuild",
-    dek: "The greenest building is often the one already standing. The case for repair as climate policy.",
+    description:
+      "Supply chains, energy, and the long arithmetic of climate — what companies actually do, not just pledge.",
   },
-];
-
-const notes = [
-  { year: "2026", title: "Field notes from a mill town in transition" },
-  { year: "2025", title: "On buying a house you cannot afford to keep" },
-  { year: "2025", title: "Twelve interviews about land" },
-  { year: "2024", title: "What a warehouse remembers" },
 ];
 
 function Index() {
