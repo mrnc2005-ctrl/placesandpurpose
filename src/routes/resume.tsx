@@ -169,9 +169,10 @@ function Resume() {
             Meredith Clark
           </h2>
           <p className="mt-4 max-w-prose text-base leading-relaxed text-muted-foreground">
-            Writer and analyst working across business, real estate, and
-            sustainability. Currently writing about land, capital, and
-            permanence.
+            Undergraduate at UNC Chapel Hill studying business administration
+            with a real estate concentration and economics — with work spanning
+            residential development, global supply chain sustainability, and
+            student leadership.
           </p>
           <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2 text-sm">
             <a
@@ -179,6 +180,12 @@ function Resume() {
               className="border-b border-carolina pb-1 tracking-wide text-navy transition-colors hover:text-carolina"
             >
               {EMAIL}
+            </a>
+            <a
+              href={`tel:${PHONE.replace(/-/g, "")}`}
+              className="border-b border-carolina pb-1 tracking-wide text-navy transition-colors hover:text-carolina"
+            >
+              {PHONE}
             </a>
             <a
               href={LINKEDIN}
@@ -190,6 +197,7 @@ function Resume() {
             </a>
           </div>
         </section>
+
 
         <section className="grid gap-12 border-b border-border py-14 md:grid-cols-12">
           <div className="md:col-span-3">
