@@ -23,55 +23,116 @@ export const Route = createFileRoute("/resume")({
 });
 
 const EMAIL = "clarkmer@unc.edu";
+const PHONE = "336-944-3343";
 const LINKEDIN = "https://www.linkedin.com/in/clarkmer23/";
 
 const experience = [
   {
-    role: "Writer & Analyst",
-    org: "Independent",
-    period: "2023 — Present",
+    role: "Rotational Intern",
+    org: "Garman Homes",
+    period: "June 2026 — July 2026",
+    location: "Morrisville, NC",
+    points: [
+      "Rotated across land acquisition, purchasing, sales, and construction management, gaining experience throughout the residential real estate development lifecycle.",
+      "Performed comparative market analyses (CMA) for land acquisition opportunities, analyzed lumber pricing, and supported preconstruction estimating for residential developments.",
+      "Collaborated with 7 construction managers across active residential projects to resolve field issues and monitor project progress.",
+      "Contributed to the development of Garman Homes' inaugural internship program by advising on onboarding, training, and rotational experiences for future cohorts.",
+    ],
+  },
+  {
+    role: "Academic Tutor",
+    org: "Academic Support Program for Student-Athletes, UNC",
+    period: "January 2026 — Present",
     location: "Chapel Hill, NC",
     points: [
-      "Reporting and essays on business, real estate, and sustainability — the deals, the codes, and the buildings that outlive both.",
-      "Market analysis and long-form features for editorial and research clients.",
+      "Tutored 15+ NCAA student-athletes in economics coursework in one-on-one and small group settings, improving comprehension of course material and study strategies.",
+      "Work closely with ASPSA staff through ongoing training and check-ins to support students in an NCAA-compliant academic environment.",
     ],
   },
   {
-    role: "Previous Role",
-    org: "Previous Organization",
-    period: "20XX — 20XX",
-    location: "City, State",
+    role: "Sustainability Intern",
+    org: "Bata",
+    period: "June 2025 — August 2025",
+    location: "Singapore",
     points: [
-      "Placeholder entry — send me the real role, employer, dates, and a few bullets and I'll drop them in.",
-      "Placeholder entry — replace with an accomplishment or two.",
+      "Supported global sustainability initiatives across 245 supplier facilities within Bata's Global Supply Chain organization.",
+      "Led development of a supplier Social and Environmental Remediation (SER) compliance dashboard, analyzing audit findings, remediation status, and supplier risk levels.",
+      "Assisted in developing long-term sustainability strategy by evaluating energy consumption, water usage, supplier performance, and emissions reduction opportunities.",
+      "Collaborated with international stakeholders to standardize supplier compliance reporting and improve sustainability data quality.",
     ],
   },
   {
-    role: "Previous Role",
-    org: "Previous Organization",
-    period: "20XX — 20XX",
-    location: "City, State",
+    role: "Sales Associate",
+    org: "Loft",
+    period: "June 2024 — July 2024",
+    location: "Greensboro, NC",
     points: [
-      "Placeholder entry — replace with your earliest listed role.",
+      "Drove revenue through excellent customer service, helping clients find and select products that met their needs.",
+      "Received 2 personal mentions in client surveys for a friendly demeanor and exceptional assistance.",
+    ],
+  },
+];
+
+const leadership = [
+  {
+    role: "President | Fundraising Chair",
+    org: "Kappa Kappa Psi Service Fraternity",
+    period: "February 2024 — Present",
+    location: "Chapel Hill, NC",
+    points: [
+      "Elected President of a 35-member service organization, overseeing chapter operations, national and university cooperation, officer leadership, and governance.",
+      "Planned and executed 10+ fundraising events, coordinating budgets, logistics, and volunteer teams in partnership with the chapter treasurer.",
+      "Supported community service initiatives including Adopt-a-Highway projects, emergency supply drives, and university outreach events.",
+    ],
+  },
+  {
+    role: "Member",
+    org: "UNC Habitat for Humanity Club",
+    period: "August 2024 — Present",
+    location: "Chapel Hill, NC",
+    points: [
+      "Participated in affordable housing construction projects including framing, site preparation, and general construction activities.",
+    ],
+  },
+  {
+    role: "Drum Major | Pep Band Conductor | Alto Saxophonist",
+    org: "University Marching Band",
+    period: "August 2023 — Present",
+    location: "Chapel Hill, NC",
+    points: [
+      "Led and conducted marching and pep band performances for NCAA Division I athletic events, including televised UNC football games before 50,000+ fans.",
+      "Coordinated with production staff and athletic departments while mentoring student musicians to deliver precise performances in high-pressure environments.",
     ],
   },
 ];
 
 const education = [
   {
-    school: "University of North Carolina",
-    degree: "Degree / Program",
-    period: "20XX — 20XX",
+    school: "University of North Carolina at Chapel Hill",
+    degree:
+      "B.S. Business Administration (Real Estate Concentration) · B.A. Economics · Minor in Music",
+    period: "Expected May 2027",
+    note: "GPA 3.59",
   },
 ];
 
-const skills = [
-  "Market analysis",
-  "Editorial writing",
-  "Real estate research",
-  "Sustainability reporting",
-  "Interviewing & fieldwork",
+const honors = [
+  { label: "Danielle Elizabeth Liotta Award", period: "May 2025" },
+  {
+    label: "Third Place — International Business Club Case Competition",
+    period: "February 2024",
+  },
+  {
+    label: "First Place — University Career Services / TTi Business Case Competition",
+    period: "November 2023",
+  },
 ];
+
+const credentials = [
+  { label: "North Carolina Broker License (in progress)", period: "Expected September 2026" },
+  { label: "Bloomberg Market Concepts", period: "May 2025" },
+];
+
 
 function Resume() {
   return (
