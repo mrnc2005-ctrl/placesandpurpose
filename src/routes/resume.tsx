@@ -249,9 +249,62 @@ function Resume() {
             <ul>
               {education.map((e) => (
                 <li key={e.school} className="border-b border-border py-6 first:pt-0 last:border-b-0">
+        <section className="grid gap-12 border-b border-border py-14 md:grid-cols-12">
+          <div className="md:col-span-3">
+            <p className="eyebrow md:sticky md:top-8">Leadership & Community</p>
+          </div>
+          <div className="md:col-span-9">
+            <ul>
+              {leadership.map((job) => (
+                <li
+                  key={`${job.org}-${job.period}`}
+                  className="grid gap-4 border-b border-border py-8 first:pt-0 last:border-b-0 md:grid-cols-12"
+                >
+                  <div className="md:col-span-3">
+                    <p className="text-xs tracking-wide text-muted-foreground">
+                      {job.period}
+                      <br />
+                      {job.location}
+                    </p>
+                  </div>
+                  <div className="md:col-span-9">
+                    <h3 className="font-display text-2xl leading-snug">
+                      {job.role}
+                    </h3>
+                    <p className="mt-1 text-sm uppercase tracking-[0.14em] text-carolina">
+                      {job.org}
+                    </p>
+                    <ul className="mt-3 space-y-2">
+                      {job.points.map((point) => (
+                        <li
+                          key={point}
+                          className="text-sm leading-relaxed text-muted-foreground"
+                        >
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <section className="grid gap-12 border-b border-border py-14 md:grid-cols-12">
+          <div className="md:col-span-3">
+            <p className="eyebrow">Education</p>
+          </div>
+          <div className="md:col-span-9">
+            <ul>
+              {education.map((e) => (
+                <li key={e.school} className="border-b border-border py-6 first:pt-0 last:border-b-0">
                   <h3 className="font-display text-2xl leading-snug">{e.school}</h3>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    {e.degree} · {e.period}
+                    {e.degree}
+                  </p>
+                  <p className="mt-1 text-xs tracking-wide text-muted-foreground">
+                    {e.period} · {e.note}
                   </p>
                 </li>
               ))}
@@ -261,20 +314,36 @@ function Resume() {
 
         <section className="grid gap-12 py-14 md:grid-cols-12">
           <div className="md:col-span-3">
-            <p className="eyebrow">Skills & Interests</p>
+            <p className="eyebrow">Honors & Credentials</p>
           </div>
-          <div className="md:col-span-9">
-            <ul className="flex flex-wrap gap-2">
-              {skills.map((s) => (
-                <li
-                  key={s}
-                  className="border border-border px-3 py-1.5 text-sm text-muted-foreground"
-                >
-                  {s}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-8 max-w-prose text-sm leading-relaxed text-muted-foreground">
+          <div className="md:col-span-9 grid gap-10 md:grid-cols-2">
+            <div>
+              <h3 className="font-display text-xl">Honors & Awards</h3>
+              <ul className="mt-3 space-y-3">
+                {honors.map((h) => (
+                  <li key={h.label} className="border-b border-border pb-3 text-sm text-muted-foreground">
+                    {h.label}
+                    <span className="mt-1 block text-xs tracking-wide text-carolina">
+                      {h.period}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-display text-xl">Certifications & Licenses</h3>
+              <ul className="mt-3 space-y-3">
+                {credentials.map((c) => (
+                  <li key={c.label} className="border-b border-border pb-3 text-sm text-muted-foreground">
+                    {c.label}
+                    <span className="mt-1 block text-xs tracking-wide text-carolina">
+                      {c.period}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <p className="md:col-span-2 max-w-prose text-sm leading-relaxed text-muted-foreground">
               Looking for the person behind the page?{" "}
               <Link
                 to="/"
@@ -294,6 +363,7 @@ function Resume() {
           <span>© {new Date().getFullYear()} Meredith Clark</span>
         </div>
       </footer>
+
     </div>
   );
 }
