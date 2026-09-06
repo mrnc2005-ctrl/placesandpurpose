@@ -106,8 +106,9 @@ function Index() {
           {sections.map((s) => (
             <article key={s.label} className="bg-background px-0 py-10 md:px-8">
               <p className="eyebrow">{s.label}</p>
-              <h3 className="mt-3 font-display text-2xl leading-snug">{s.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.dek}</p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                {s.description}
+              </p>
             </article>
           ))}
         </section>
@@ -126,24 +127,15 @@ function Index() {
               className="w-full object-cover"
             />
           </div>
-          <div className="md:col-span-7">
-            <p className="eyebrow">Selected writing</p>
-            <ul className="mt-6">
-              {notes.map((n) => (
-                <li
-                  key={n.title}
-                  className="flex items-baseline gap-6 border-b border-border py-5"
-                >
-                  <span className="w-12 shrink-0 text-xs text-muted-foreground">{n.year}</span>
-                  <a
-                    href="#writing"
-                    className="font-display text-2xl leading-snug transition-colors hover:text-carolina"
-                  >
-                    {n.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <div className="flex flex-col justify-end md:col-span-7">
+            <p className="eyebrow">Writing</p>
+            <h3 className="mt-4 font-display text-3xl leading-tight md:text-4xl">
+              Essays and reporting on business, real estate, and sustainability.
+            </h3>
+            <p className="mt-5 max-w-prose text-base leading-relaxed text-muted-foreground">
+              New pieces are on the way — this space will hold selected writing
+              as it is published.
+            </p>
           </div>
         </section>
 
