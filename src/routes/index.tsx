@@ -63,9 +63,12 @@ function Index() {
             </h1>
           </div>
           <nav className="flex gap-6 text-sm text-muted-foreground">
-            <a className="transition-colors hover:text-carolina" href="#work">
-              Work
-            </a>
+            <Link
+              to="/resume"
+              className="transition-colors hover:text-carolina"
+            >
+              Resume
+            </Link>
             <a className="transition-colors hover:text-carolina" href="#writing">
               Writing
             </a>
