@@ -9,6 +9,9 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   vite: {
     base: "/the-editorial-suite/",
+    build: {
+      assetsDir: "assets",
+    },
   },
   tanstackStart: {
     server: { entry: "server" },
