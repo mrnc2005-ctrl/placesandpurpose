@@ -4,8 +4,7 @@ const heroImage = "/hero-plaza.jpg";
 const writingImage = "/writing-pen.webp";
 const headshotImage = "/0W4A9033.jpeg";
 
-const heroImage = heroImageAsset.url;
-const writingImage = writingImageAsset.url;
+export const Route = createFileRoute("/")({
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -114,7 +113,7 @@ function Index() {
         <section id="about" className="grid gap-10 py-16 md:grid-cols-12">
           <figure className="md:col-span-5">
             <img
-              src={headshotImage.url}
+              src={headshotImage}
               alt="Meredith Clark in a black blazer, smiling with arms crossed"
               width={1440}
               height={1440}
