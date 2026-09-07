@@ -2,12 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 
 import heroImageAsset from "@/assets/hero-plaza.jpg.asset.json";
 import writingImageAsset from "@/assets/writing-pen.webp.asset.json";
-import sustainabilityImageAsset from "@/assets/chapel-hill-aerial.jpg.asset.json";
 import headshotAsset from "@/assets/0W4A9033.jpeg.asset.json";
 
 const heroImage = heroImageAsset.url;
 const writingImage = writingImageAsset.url;
-const sustainabilityImage = sustainabilityImageAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -115,28 +113,6 @@ function Index() {
           </div>
         </section>
 
-        <section className="grid gap-12 border-b border-border py-16 md:grid-cols-12">
-          <div className="md:col-span-6">
-            <p className="eyebrow">Sustainability</p>
-            <h3 className="mt-4 font-display text-3xl leading-tight md:text-4xl">
-              A city keeps its promises in concrete.
-            </h3>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              Ongoing reporting on retrofits, embodied carbon, and the financing
-              structures that decide whether a neighborhood gets rebuilt or repaired.
-            </p>
-          </div>
-          <div className="md:col-span-6">
-            <img
-              src={sustainabilityImage}
-              alt="Aerial view of the University of North Carolina campus among green trees"
-              width={1200}
-              height={900}
-              loading="lazy"
-              className="w-full object-cover"
-            />
-          </div>
-        </section>
 
         <section id="about" className="grid gap-10 py-16 md:grid-cols-12">
           <figure className="md:col-span-5">
