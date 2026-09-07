@@ -105,8 +105,7 @@ function Index() {
               Essays and reporting on business, real estate, and sustainability.
             </h3>
             <p className="mt-5 max-w-prose text-base leading-relaxed text-muted-foreground">
-              New pieces are on the way — this space will hold selected writing
-              as it is published.
+              New pieces are on the way...
             </p>
           </div>
         </section>
