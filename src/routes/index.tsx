@@ -86,17 +86,17 @@ function Index() {
           id="writing"
           className="grid gap-12 border-b border-border py-16 md:grid-cols-12"
         >
-          <div className="md:col-span-5">
+          <div className="md:col-span-4">
             <img
               src={writingImage}
               alt="A fountain pen nib laying ink onto lined paper"
               width={1000}
               height={1200}
               loading="lazy"
-              className="w-full object-cover"
+              className="w-full max-w-md object-cover"
             />
           </div>
-          <div className="flex flex-col justify-end md:col-span-7">
+          <div className="flex flex-col justify-end md:col-span-8">
             <p className="eyebrow">Writing</p>
             <h3 className="mt-4 font-display text-3xl leading-tight md:text-4xl">
               Essays and reporting on business, real estate, and sustainability.
