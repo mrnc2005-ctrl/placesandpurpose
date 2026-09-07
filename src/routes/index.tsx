@@ -125,7 +125,7 @@ function Index() {
           <div className="flex flex-col justify-center md:col-span-7">
             <p className="eyebrow">About</p>
             <p className="mt-5 font-display text-2xl leading-relaxed md:text-3xl">
-              Meredith Clark is a student at the University of North Carolina at Chapel Hill, pursuing a B.S.B.A. in Business Administration and a B.A. in Economics, with a minor in Music. Through the Kenan-Flagler Wood Center for Real Estate Studies, she explores the intersection of real estae, public policy, and sustainability with a particular interest in how these fields can shape the future of the built environment.
+              Meredith Clark is a student at the University of North Carolina at Chapel Hill, pursuing a B.S.B.A. in Business Administration and a B.A. in Economics, with a minor in Music. Through the Kenan-Flagler Wood Center for Real Estate Studies, she explores the intersection of real estate, public policy, and sustainability with a particular interest in how these fields can shape the future of the built environment.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-2">
               <a
