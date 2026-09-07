@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-import photoGarman from "@/assets/IMG_0874.jpeg.asset.json";
-import photoBand from "@/assets/IMG_1927.jpeg.asset.json";
-import photoSingapore from "@/assets/IMG_8519.jpeg.asset.json";
-import photoBridge from "@/assets/IMG_0790.jpeg.asset.json";
+const photoGarman = "/IMG_0874.jpeg";
+const photoBand = "/IMG_1927.jpeg";
+const photoSingapore = "/IMG_8519.jpeg";
+const photoBridge = "/IMG_0790.jpeg";
 
 export const Route = createFileRoute("/resume")({
   head: () => ({
