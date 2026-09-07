@@ -31,24 +31,6 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const sections = [
-  {
-    label: "Business",
-    description:
-      "Markets, capital, and the decisions behind the deal — how companies and developers make money move.",
-  },
-  {
-    label: "Real Estate",
-    description:
-      "Land, housing, and the built environment — from acquisition and entitlement to the finished street.",
-  },
-  {
-    label: "Sustainability",
-    description:
-      "Supply chains, energy, and the long arithmetic of climate — what companies actually do, not just pledge.",
-  },
-];
-
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -82,7 +64,7 @@ function Index() {
           <figure className="md:col-span-7">
             <img
               src={heroImage}
-              alt="Concrete and glass building softened by hanging greenery"
+              alt="Pedestrian plaza with arched storefronts and plant-filled terraces at dusk"
               width={1600}
               height={1104}
               className="w-full object-cover"
@@ -107,17 +89,6 @@ function Index() {
           </div>
         </section>
 
-        <section id="work" className="grid gap-px border-b border-border bg-border md:grid-cols-3">
-          {sections.map((s) => (
-            <article key={s.label} className="bg-background px-0 py-10 md:px-8">
-              <p className="eyebrow">{s.label}</p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {s.description}
-              </p>
-            </article>
-          ))}
-        </section>
-
         <section
           id="writing"
           className="grid gap-12 border-b border-border py-16 md:grid-cols-12"
@@ -125,7 +96,7 @@ function Index() {
           <div className="md:col-span-5">
             <img
               src={writingImage}
-              alt="Notebooks, a fountain pen, and a folded newspaper on a desk"
+              alt="A fountain pen nib laying ink onto lined paper"
               width={1000}
               height={1200}
               loading="lazy"
@@ -158,7 +129,7 @@ function Index() {
           <div className="md:col-span-6">
             <img
               src={sustainabilityImage}
-              alt="Aerial view of a tree-lined neighborhood with solar rooftops"
+              alt="Aerial view of the University of North Carolina campus among green trees"
               width={1200}
               height={900}
               loading="lazy"
