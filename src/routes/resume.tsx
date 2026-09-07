@@ -175,7 +175,7 @@ function Resume() {
           </h2>
           <p className="mt-4 max-w-prose text-base leading-relaxed text-muted-foreground">
             Undergraduate at UNC Chapel Hill studying business administration
-            with a real estate concentration and economics — with work spanning
+            with a real estate concentration and economics with work spanning
             residential development, global supply chain sustainability, and
             student leadership.
           </p>
@@ -328,12 +328,12 @@ function Resume() {
               {
                 src: photoSingapore.url,
                 alt: "Meredith Clark in front of the indoor waterfall at Jewel Changi Airport, Singapore",
-                caption: "Singapore — summer with Bata",
+                caption: "Summer with Bata — Singapore",
               },
               {
                 src: photoBridge.url,
                 alt: "Meredith Clark in a safety helmet crossing a wooden suspension bridge in a forest",
-                caption: "From the field — North Carolina",
+                caption: "For Fun — ziplining in Costa Rica",
               },
             ].map((photo) => (
               <figure key={photo.caption} className="bg-background">
