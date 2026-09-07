@@ -323,7 +323,7 @@ function Resume() {
               {
                 src: photoBand,
                 alt: "Meredith Clark holding a saxophone in front of the UNC bell tower",
-                caption: "Carolina marching band — Chapel Hill, NC",
+                caption: "UNC Football 2027 Opener — Dublin, Ireland",
               },
               {
                 src: photoSingapore,
@@ -333,7 +333,7 @@ function Resume() {
               {
                 src: photoBridge,
                 alt: "Meredith Clark in a safety helmet crossing a wooden suspension bridge in a forest",
-                caption: "For Fun — ziplining in Costa Rica",
+                caption: "For Fun — Ziplining in Costa Rica",
               },
             ].map((photo) => (
               <figure key={photo.caption} className="bg-background">
