@@ -35,7 +35,7 @@ function Index() {
       <header className="mx-auto max-w-6xl px-6 pt-8 pb-6">
         <div className="flex flex-wrap items-baseline justify-between gap-4 border-b border-border pb-6">
           <div>
-            <p className="eyebrow">Meredith Clark's Portfolio</p>
+            <p className="eyebrow">MEREDITH RENEE CLARK</p>
             <h1 className="mt-2 font-display text-4xl leading-none tracking-tight md:text-6xl">
               Places <span className="italic text-carolina">and</span> Purpose
             </h1>
@@ -74,9 +74,7 @@ function Index() {
               Writing about how places are financed, built, and kept.
             </h2>
             <p className="mt-5 max-w-prose text-base leading-relaxed text-muted-foreground">
-              I cover the business of real estate and the long arithmetic of
-              sustainability — the deals, the codes, and the buildings that outlive
-              both. My reporting sits where balance sheets meet the street.
+              I explore the challenges and developments shaping real estate and public policy, with a particular focus on the issues that matter most to Gen Z and the ways these concerns will influence the future of the built environment.
             </p>
             <a
               href="#writing"
@@ -128,9 +126,7 @@ function Index() {
           <div className="flex flex-col justify-center md:col-span-7">
             <p className="eyebrow">About</p>
             <p className="mt-5 font-display text-2xl leading-relaxed md:text-3xl">
-              Meredith Clark is a writer and analyst working across business, real
-              estate, and sustainability. She is currently writing about land, capital,
-              and permanence.
+              Meredith Clark is a student at the University of North Carolina at Chapel Hill, pursuing a B.S.B.A. in Business Administration and a B.A. in Economics, with a minor in Music. Through the Kenan-Flagler Wood Center for Real Estate Studies, she explores the intersection of real estae, public policy, and sustainability with a particular interest in how these fields can shape the future of the built environment.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-2">
               <a
