@@ -316,22 +316,22 @@ function Resume() {
           <div className="md:col-span-9 grid gap-px border border-border bg-border sm:grid-cols-2">
             {[
               {
-                src: photoGarman.url,
+                src: photoGarman,
                 alt: "Meredith Clark in a hard hat on an unfinished road in a new housing development",
                 caption: "On site with Garman Homes — Morrisville, NC",
               },
               {
-                src: photoBand.url,
+                src: photoBand,
                 alt: "Meredith Clark holding a saxophone in front of the UNC bell tower",
                 caption: "Carolina marching band — Chapel Hill, NC",
               },
               {
-                src: photoSingapore.url,
+                src: photoSingapore,
                 alt: "Meredith Clark in front of the indoor waterfall at Jewel Changi Airport, Singapore",
                 caption: "Summer with Bata — Singapore",
               },
               {
-                src: photoBridge.url,
+                src: photoBridge,
                 alt: "Meredith Clark in a safety helmet crossing a wooden suspension bridge in a forest",
                 caption: "For Fun — ziplining in Costa Rica",
               },
