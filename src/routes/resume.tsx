@@ -145,7 +145,7 @@ function Resume() {
       <header className="mx-auto max-w-6xl px-6 pt-8 pb-6">
         <div className="flex flex-wrap items-baseline justify-between gap-4 border-b border-border pb-6">
           <div>
-            <p className="eyebrow">Meredith Clark's Portfolio</p>
+            <p className="eyebrow">MEREDITH RENEE CLARK</p>
             <h1 className="mt-2 font-display text-4xl leading-none tracking-tight md:text-6xl">
               Places <span className="italic text-carolina">and</span> Purpose
             </h1>
