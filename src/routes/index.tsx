@@ -5,8 +5,6 @@ const writingImage = "/writing-pen.webp";
 const headshotImage = "/0W4A9033.jpeg";
 
 export const Route = createFileRoute("/")({
-
-export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Places and Purpose — Meredith Clark's Portfolio" },
