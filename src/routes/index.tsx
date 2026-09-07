@@ -1,9 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-import heroImage from "@/assets/hero-places.jpg";
-import writingImage from "@/assets/writing.jpg";
-import sustainabilityImage from "@/assets/sustainability.jpg";
+import heroImageAsset from "@/assets/hero-plaza.jpg.asset.json";
+import writingImageAsset from "@/assets/writing-pen.webp.asset.json";
+import sustainabilityImageAsset from "@/assets/chapel-hill-aerial.jpg.asset.json";
 import headshotAsset from "@/assets/0W4A9033.jpeg.asset.json";
+
+const heroImage = heroImageAsset.url;
+const writingImage = writingImageAsset.url;
+const sustainabilityImage = sustainabilityImageAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
